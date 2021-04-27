@@ -1,0 +1,17 @@
+<div class="row">
+    {{#each _ar}}
+    <div class = "col-sm-6 card">
+        <a href="/{{ @index }}"
+        <div>
+            <img class="float-left" src="{{image }}" style="margin-right:10px">
+            <h2>{{name}}</h2>
+            {{#if worth}}
+            <h2>Worth : {{worth}}</h2>
+            {{else}}
+            <del>Worth : nuknown</del>
+            {{/if}}
+        </div>
+
+    </div>
+    {{/each}}
+</div>
